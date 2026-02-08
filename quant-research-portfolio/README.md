@@ -5,11 +5,6 @@
 **Model:** quadratic time trend + month-of-year dummies (seasonality).  
 Implemented in: `src/quant_portfolio/natgas/price_forecast.py`
 
-### Run the demo
-```bash
-python scripts/demo_natgas.py
-```
-
 What it prints:
 - training date range
 - example predicted price for a future date
@@ -40,11 +35,6 @@ Core idea:
 
 Implemented in: `src/quant_portfolio/credit/pd_model.py`
 
-### Run the demo
-```bash
-python scripts/demo_credit.py
-```
-
 ---
 
 ## 4) Mortgages: FICO Bucketing (Quantization)
@@ -59,46 +49,9 @@ Implemented in: `src/quant_portfolio/credit/fico_quantization.py`
 
 ---
 
-## Installation
-
-Create a virtual environment and install dependencies:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -e .
-```
-
----
-
 ## Data
 
 Raw simulation datasets are stored at:
 - `data/raw/Nat_Gas.csv`
 - `data/raw/Loan_Data.csv`
-
-If you replace with your own data, keep raw files out of git and update file paths in scripts.
-
 ---
-
-## Suggested next improvements (if you want to level this up)
-
-**Nat gas**
-- use a model that respects time-series structure (SARIMAX / Prophet / gradient boosting)
-- quantify forecast uncertainty (prediction intervals)
-- add robustness checks: rolling validation, parameter stability
-
-**Storage contract**
-- optimize injection/withdraw schedule (dynamic programming / linear programming)
-- incorporate forward curve / basis risk assumptions
-
-**Credit risk**
-- add calibration plot and AUC
-- compare models: tree-based vs logistic, include feature importance
-- add simple monitoring metrics (drift checks)
-
----
-
-## License
-
-MIT (add your preferred license).
