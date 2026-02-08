@@ -1,6 +1,6 @@
 # Methodology Notes
 
-## Natural gas pricing (job simulation)
+## Natural gas pricing
 
 - Data: month-end prices (Oct 2020 → Sep 2024).
 - Goal: estimate price for any date (past) and extrapolate 1 year forward (for indicative long-dated pricing).
