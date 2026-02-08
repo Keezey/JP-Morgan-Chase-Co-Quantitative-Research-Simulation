@@ -1,16 +1,3 @@
-# Quant Research Job Simulation Portfolio
-
-This repository packages several quantitative research job-simulation tasks into a **GitHub-ready portfolio**:
-- **Commodities:** natural gas price estimation + **storage contract valuation** prototype
-- **Credit risk:** **Probability of Default (PD)** model → expected loss + **FICO bucketing (quantization)** via dynamic programming
-
-The focus is on:
-- clear problem framing (what / why)
-- reproducible code (library-style modules + scripts)
-- explainable baselines (what you’d ship first before iterating)
-
----
-
 ## 1) Natural Gas Price Estimation (Monthly → Any Date + 1Y Extrapolation)
 
 **Goal (simulation):** use month-end natural gas prices to estimate the gas price for *any date* in the past, and provide an **indicative forward extrapolation** for 1 year.
